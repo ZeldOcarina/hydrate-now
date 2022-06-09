@@ -1,5 +1,6 @@
 import * as bootstrap from "bootstrap";
 import './js/navbar'
+import './js/testimonials'
 
 if (module.hot) {
     module.hot.accept();
