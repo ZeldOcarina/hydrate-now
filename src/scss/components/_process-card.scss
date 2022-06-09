@@ -1,0 +1,51 @@
+.process-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+
+  &__number-container {
+    display: block;
+    font-size: 2rem;
+    font-weight: 600;
+    border-radius: 50%;
+    width: 40px;
+    padding: 4px;
+    margin: 1.5rem 0;
+    background: #fff;
+    color: var(--color-primary);
+    border: 1px solid var(--color-primary);
+    text-align: center;
+
+    span {
+      display: inline-block;
+      transform: translateX(2px);
+    }
+  }
+
+  &__image {
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+  }
+
+  &__bottom-content {
+    padding: var(--gutter);
+    text-align: center;
+    height: 20rem;
+  }
+
+  &__title {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--color-primary);
+    margin: 0 0 var(--title-gutter) 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+}

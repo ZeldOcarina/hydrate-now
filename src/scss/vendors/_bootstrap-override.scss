@@ -1,0 +1,28 @@
+:root {
+  --bs-body-font-size: 5rem;
+}
+
+$primary: #0a4672;
+$secondary: #ffc700;
+$navbar-light-color: #000000;
+
+$font-size-base: 1.6rem;
+$navbar-padding-y: 1rem;
+$navbar-padding-y: 1rem;
+
+$btn-border-radius: 6px;
+$btn-padding-x: 2rem;
+$btn-padding-y: 1rem;
+
+.navbar {
+  background-color: var(--white);
+}
+
+.navbar-nav {
+  gap: 2rem;
+  align-items: center;
+}
+
+img {
+  width: auto;
+}

@@ -4,13 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Parcel HTML Setup</title>
+    <title>Hydrate Now</title>
     <!-- Google Fonts -->
-    <!-- Google Fonts Link: https://fonts.google.com/share?selection.family=Open%20Sans:wght@300;400;600;700 -->
+    <!-- Google Fonts Link: https://fonts.google.com/share?selection.family=Lora:wght@400;600%7CMontserrat:wght@200;400;600 -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600&family=Montserrat:wght@200;400;600&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./scss/index.scss" />
@@ -48,10 +48,10 @@
       content="https://github.com/ZeldOcarina/parcel-html-default"
     />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Parcel HTML Setup" />
+    <meta property="og:title" content="Hydrate Now" />
     <meta
       property="og:description"
-      content="A perfect setup to build static websites with Parcel, ESNext and React!"
+      content="IV Drops that suit your needs. Get the best professional experience in LA."
     />
     <meta property="og:image" content="./images/screenshot.png" />
     <meta property="og:image:type" content="image/jpeg" />
@@ -63,15 +63,127 @@
     />
   </head>
   <body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container" id="navbar-container">
+        <a class="navbar-brand"
+          ><img
+            class="navbar__logo"
+            src="./images/hydrate-now-logo.svg"
+            alt="Rocket Logo"
+        /></a>
+        <button
+          class="navbar-toggler custom-button"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbar"
+          aria-controls="navbar"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#testimonals">Casi Studio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#steps">Step</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#benefits">Vantaggi</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#functions">Funzioni</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#faq">Faq</a>
+            </li>
+            <li class="nav-item">
+              <a class="navbar__button btn btn-secondary" href="#contact"
+                >SCHEDULE NOW</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
     <header class="hero">
-      <img
-        class="hero__image"
-        src="./images/parcel-icon.png?as=webp"
-        alt="Parcel logo"
-      />
-      <h1 class="hero__title">Parcel HTML Starter</h1>
+      <div class="hero__content">
+        <img
+          class="hero__image"
+          src="./images/hydrate-now-logo.svg"
+          alt="Hydrate Now logo"
+        />
+        <h1 class="hero__title">The IV Drops you need</h1>
+        <p class="hero__text">
+          Experience the best IV drops, specifically studied for your situation.
+        </p>
+      </div>
+      <video class="hero__bg-video" autoplay muted loop playsinline>
+        <source src="./images/hero-video.mp4" type="video/mp4" />
+        Your browser is not supported
+      </video>
     </header>
-
+    <section>
+      <div class="container">
+        <h2 class="section-title">OUR PROCESS</h2>
+        <p class="subtitle">Your path to being healthy</p>
+        <div class="process__cards-container">
+          <div class="process-card">
+            <div class="process-card__number-container">
+              <span class="process-card__number">1</span>
+            </div>
+            <img
+              class="process-card__image"
+              src="./images/iv.jpg?width=700&to=webp"
+              alt="Microscope"
+            />
+            <div class="process-card__bottom-content">
+              <h5 class="process-card__title">Choose your IV</h5>
+              <p class="process-card__item">
+                Choose the IV that fits your needs by picking from an
+                unparalleled range of choices.
+              </p>
+            </div>
+          </div>
+          <div class="process-card">
+            <div class="process-card__number-container">
+              <span class="process-card__number">2</span>
+            </div>
+            <img
+              class="process-card__image"
+              src="./images/microscope.jpg?width=700&to=webp"
+              alt="Microscope"
+            />
+            <div class="process-card__bottom-content">
+              <h5 class="process-card__title">Medical visit</h5>
+              <p class="process-card__item">
+                First we make sure there's no health condition that would create
+                problems.
+              </p>
+            </div>
+          </div>
+          <div class="process-card">
+            <div class="process-card__number-container">
+              <span class="process-card__number">3</span>
+            </div>
+            <img
+              class="process-card__image"
+              src="./images/healthy.jpg?width=700&to=webp"
+              alt="Microscope"
+            />
+            <div class="process-card__bottom-content">
+              <h5 class="process-card__title">Feel at your best.</h5>
+              <p class="process-card__item">
+                Now you get the IV and you experience the incredible gains
+                nutricients can bring.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <script src="./index.js" type="module"></script>
   </body>
 </html>

@@ -1,23 +1,23 @@
 // IMPORT NORMALIZE.CSS
 @import "../../node_modules/normalize.css/normalize.css";
 
-// IMPORT BOOTSTRAP REQUIRED MODULES
-@import "../../node_modules/bootstrap/scss/functions";
-@import "../../node_modules/bootstrap/scss/variables";
-@import "../../node_modules/bootstrap/scss/mixins";
-
-// IMPORT BOOTSTRAP OPTIONAL MODULES
-@import "../../node_modules/bootstrap/scss/containers";
-@import "../../node_modules/bootstrap/scss/utilities";
-@import "../../node_modules/bootstrap/scss/utilities/api";
+// IMPORT BOOTSTRAP
+@import "../node_modules/bootstrap/scss/bootstrap";
 
 @import "./abstracts/abstracts";
 @import "./abstracts/mediaqueries";
 
 @import "./base/base";
+@import "./base/base-classes";
+
+@import "./components/process-card";
+
+@import "./layout/navbar";
 
 @import "./sections/hero";
+@import "./sections/process";
 
 @import "./typography/typography";
+@import "./vendors/bootstrap-override";
 
 @import "./utils/utils";

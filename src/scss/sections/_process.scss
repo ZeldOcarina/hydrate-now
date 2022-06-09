@@ -1,0 +1,8 @@
+.process {
+  &__cards-container {
+    margin-top: 6rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--gutter);
+  }
+}
