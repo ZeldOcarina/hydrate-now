@@ -1,4 +1,10 @@
 .process {
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
   &__cards-container {
     margin-top: 6rem;
     display: grid;
