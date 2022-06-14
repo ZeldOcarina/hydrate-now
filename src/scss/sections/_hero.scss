@@ -12,12 +12,12 @@
   text-align: center;
   background-image: linear-gradient(
     to right,
-    rgba(7, 106, 251, 0.45) 0%,
-    rgba(7, 106, 251, 0.45) 100%
+    rgba($color-primary, $background-opacity) 0%,
+    rgba($color-primary, $background-opacity) 100%
   );
 
   &__content {
-    background-color: rgb(226, 92, 159, 0.7);
+    background-color: rgb($banner-color, $banner-opacity);
     width: 100vw;
     padding: 6rem;
   }

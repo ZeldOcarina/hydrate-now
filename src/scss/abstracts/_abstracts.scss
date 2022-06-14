@@ -1,7 +1,22 @@
+$color-primary: #38c3ff;
+$color-secondary: #ff5ecc;
+$banner-color: #ff5ecc;
+
+$banner-opacity: 0.9;
+$background-opacity: 0.7;
+
 :root {
   // COLORS
-  --color-primary: #076afb;
-  --color-secondary: #e25c9f;
+  //ORIGINAL #076afb
+  // #57ddf7
+  // #57aff7
+  // #5787f7
+
+  // #fc58ef
+  // #fc58c5
+  // #f51dad
+  --color-primary: #38c3ff;
+  --color-secondary: #ff5ecc;
   --black: #000000;
   --white: #ffffff;
   --body-bg-color: #fafafa;

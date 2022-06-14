@@ -6,8 +6,8 @@ const imageRootUrl = process.env.AWS_URL;
 const StyledCard = styled.article`
   background-image: linear-gradient(
     90deg,
-    rgba(226, 92, 159, 1) 0%,
-    rgba(7, 106, 251, 1) 100%
+    var(--color-secondary) 0%,
+    var(--color-primary) 100%
   );
   padding: 2rem;
   border-radius: 10px;
