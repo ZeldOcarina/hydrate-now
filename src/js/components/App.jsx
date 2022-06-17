@@ -17,8 +17,8 @@ const StyledApp = styled.div`
 const App = () => {
   return (
     <StyledApp className="container">
-      {jsonCards.map((card, i) => {
-        return <Card key={i} {...card} i={i} />;
+      {jsonCards.map((card) => {
+        return <Card key={card.id} {...card} />;
       })}
     </StyledApp>
   );

@@ -1,35 +1,298 @@
 [
   {
-    "title": "Immune\rBooster",
-    "subtitle": "Vitamin C on Steroids",
-    "price": 200
-  },
-  { "title": "Hangover", "subtitle": "Get back in shape", "price": 200 },
-  { "title": "Jet Lag", "subtitle": "Travel with ease", "price": 200 },
-  { "title": "Detox", "subtitle": "Clean body clean mind", "price": 200 },
-  { "title": "Energy", "subtitle": "NAD+ for your body", "price": 200 },
-  { "title": "Hair and\rNails", "subtitle": "Help your body", "price": 200 },
-  { "title": "Brain Fuel", "subtitle": "Real energy for nerds", "price": 200 },
-  { "title": "Stress", "subtitle": "Get real relaxation", "price": 200 },
-  {
-    "title": "Muscles",
-    "subtitle": "True athletic performance\rbooster",
-    "price": 200
-  },
-  { "title": "Endurance", "subtitle": "Endure tough times", "price": 200 },
-  {
-    "title": "The Beauty\rTreatment",
-    "subtitle": "Be as beautiful\ras you are",
-    "price": 200
+    "id": "1",
+    "category": "Hangover",
+    "title": "Still spinning",
+    "monarchyTitle": "About last night...",
+    "price": 169.5,
+    "ingredients": ["Normal Saline", "Variants Choice"],
+    "variants": ["Anti-Nausea, Pain Relief", "Anti-Heartburn Medications"]
   },
   {
-    "title": "Long Haul\rCovid",
-    "subtitle": "Clean up that virus\rfrom your body",
-    "price": 200
+    "id": "2",
+    "category": "Hangover",
+    "title": "Hydration",
+    "monarchyTitle": "Hydration",
+    "price": 174.5,
+    "ingredients": ["Normal Saline"],
+    "variants": []
   },
   {
-    "title": "Migraine",
-    "subtitle": "Get rid of those pesky\rheadaches",
-    "price": 200
+    "id": "3",
+    "category": "Hangover",
+    "title": "The Baller",
+    "monarchyTitle": "What happens in Vegas...",
+    "price": 349.0,
+    "ingredients": ["Normal Saline", "Variants Choice"],
+    "variants": [
+      "Modified Myers' Cocktail",
+      "Anti-Nausea and Pain Relief and Anti-Heartburn Medications OR MultiVitamin Cocktail"
+    ]
+  },
+  {
+    "id": "4",
+    "category": "Hangover",
+    "title": "Defcon 1",
+    "monarchyTitle": "So that happened",
+    "price": 229.0,
+    "ingredients": ["Normal Saline", "Variants Choice"],
+    "variants": ["Anti-Nausea and Pain Relief", "Anti-Heartburn Medications"]
+  },
+  {
+    "id": "5",
+    "category": "Hangover",
+    "title": "Pre Game",
+    "monarchyTitle": "You better be ready",
+    "price": 199.0,
+    "ingredients": ["Normal Saline", "B-Complex"],
+    "variants": []
+  },
+  {
+    "id": "6",
+    "category": "Energy and Immunity",
+    "title": "Immune Boost",
+    "monarchyTitle": "Immunity Extended",
+    "price": 242.0,
+    "ingredients": [
+      "Normal Saline",
+      "B-Complex",
+      "Vitamin C (Super Dose)",
+      "Glutathione Push"
+    ],
+    "variants": []
+  },
+  {
+    "id": "7",
+    "category": "Energy and Immunity",
+    "title": "Hydration",
+    "monarchyTitle": "Hydration",
+    "price": 159.0,
+    "ingredients": ["Normal Saline"],
+    "variants": []
+  },
+  {
+    "id": "8",
+    "category": "Energy and Immunity",
+    "title": "NAD+",
+    "monarchyTitle": "NAD+",
+    "price": 799.0,
+    "ingredients": ["Normal Saline", "NAD"],
+    "variants": []
+  },
+  {
+    "id": "9",
+    "category": "Energy and Immunity",
+    "title": "NAD + Add On for 100mg",
+    "monarchyTitle": "NAD+ - 100mg Add On",
+    "price": 159.0,
+    "ingredients": ["Normal Saline", "NAD"],
+    "variants": []
+  },
+  {
+    "id": "10",
+    "category": "Energy and Immunity",
+    "title": "Relaxation",
+    "monarchyTitle": "Relaxation",
+    "price": 249.5,
+    "ingredients": ["Normal Saline", "Magnesium", "Taurine", "MultiVitamin"],
+    "variants": []
+  },
+  {
+    "id": "11",
+    "category": "Energy and Immunity",
+    "title": "Prenatal",
+    "monarchyTitle": "Relaxation",
+    "price": 219.0,
+    "ingredients": ["Normal Saline", "Pyridoxine (B6)"],
+    "variants": []
+  },
+  {
+    "id": "12",
+    "category": "Energy and Immunity",
+    "title": "JetLag",
+    "monarchyTitle": "JetLag",
+    "price": 259.5,
+    "ingredients": [
+      "Normal Saline",
+      "Vitamin B12",
+      "Glutamine: Amino Acid",
+      "L-Arginine: Amino Acid",
+      "Lysine: Amino Acid",
+      "Citrulline: Amino Acid",
+      "Carnitine: Amino Acid"
+    ],
+    "variants": []
+  },
+  {
+    "id": "13",
+    "category": "Energy and Immunity",
+    "title": "Sexual Health Support",
+    "monarchyTitle": "Sexual Boost",
+    "price": 309.0,
+    "ingredients": [
+      "Normal Saline",
+      "Vitamin B12",
+      "Glutamine: Amino Acid",
+      "L-Arginine: Amino Acid",
+      "Lysine: Amino Acid",
+      "Citrulline: Amino Acid",
+      "Carnitine: Amino Acid"
+    ],
+    "variants": []
+  },
+  {
+    "id": "14",
+    "category": "Energy and Immunity",
+    "title": "Energy",
+    "monarchyTitle": "Energy Boost",
+    "price": 189.0,
+    "ingredients": [],
+    "variants": []
+  },
+  {
+    "id": "15",
+    "category": "Athletes",
+    "title": "Workout Boost",
+    "monarchyTitle": "The fittest",
+    "price": 232.0,
+    "ingredients": [
+      "Normal Saline",
+      "Vitamin B12",
+      "Glutamine: Amino Acid",
+      "L-Arginine: Amino Acid",
+      "Lysine: Amino Acid",
+      "Citrulline: Amino Acid",
+      "Carnitine: Amino Acid"
+    ],
+    "variants": []
+  },
+  {
+    "id": "16",
+    "category": "Athletes",
+    "title": "Hydration",
+    "monarchyTitle": "Hydration",
+    "price": 124.5,
+    "ingredients": ["Normal Saline"],
+    "variants": []
+  },
+  {
+    "id": "17",
+    "category": "Athletes",
+    "title": "Workout Routine Support",
+    "monarchyTitle": "Reset Recovery Workout",
+    "price": 239.5,
+    "ingredients": [
+      "Normal Saline",
+      "Glutamine: Amino Acid",
+      "L-Arginine: Amino Acid",
+      "Lysine: Amino Acid",
+      "Citrulline: Amino Acid",
+      "Carnitine: Amino Acid"
+    ],
+    "variants": []
+  },
+  {
+    "id": "18",
+    "category": "Beauty",
+    "title": "Weight Loss Support",
+    "monarchyTitle": "Metabolism Boost",
+    "price": 242.0,
+    "ingredients": [
+      "Normal Saline",
+      "Intramuscular Lipo C (M.I.C.)",
+      "Vitamin B12"
+    ],
+    "variants": []
+  },
+  {
+    "id": "19",
+    "category": "Beauty",
+    "title": "Skin Rejuvination",
+    "monarchyTitle": "The Skin Glow Routine",
+    "price": 234.5,
+    "ingredients": [
+      "Normal Saline",
+      "Vitamin C (Super Dose)",
+      "Glutathione Push"
+    ],
+    "variants": []
+  },
+  {
+    "id": "20",
+    "category": "Beauty",
+    "title": "Hair Skin and Nail Strengthener",
+    "monarchyTitle": "Hair Skin and Nail Strengthener",
+    "price": 329.0,
+    "ingredients": [
+      "Normal Saline",
+      "Biotin",
+      "Glutathione Push",
+      "Vitamin C (Super Dose)"
+    ],
+    "variants": []
+  },
+  {
+    "id": "21",
+    "category": "Feeling Sick",
+    "title": "Cold and Flu",
+    "monarchyTitle": "Cold and Flu",
+    "price": 249.5,
+    "ingredients": [
+      "Normal Saline",
+      "Vitamin C (Super Dose)",
+      "MultiVitamin",
+      "Pain Relief"
+    ],
+    "variants": []
+  },
+  {
+    "id": "22",
+    "category": "Feeling Sick",
+    "title": "Food Poisoning",
+    "monarchyTitle": "Food Poisoning",
+    "price": 299.0,
+    "ingredients": ["Normal Saline", "MultiVitamin", "Anti-nausea"],
+    "variants": []
+  },
+  {
+    "id": "23",
+    "category": "Feeling Sick",
+    "title": "Stomach Flu",
+    "monarchyTitle": "Stomach Flu",
+    "price": 259.5,
+    "ingredients": ["Normal Saline", "MultiVitamin", "Pepcid"],
+    "variants": []
+  },
+  {
+    "id": "24",
+    "category": "Feeling Sick",
+    "title": "Fatigued / Dehydrated",
+    "monarchyTitle": "Fatigued / Dehydrated",
+    "price": 284.5,
+    "ingredients": ["Normal Saline", "Vitamin B12", "Taurine", "Caffeine"]
+  },
+  {
+    "id": "25",
+    "category": "Feeling Sick",
+    "title": "Mygraine",
+    "monarchyTitle": "Mygraine",
+    "price": 249.5,
+    "ingredients": ["Normal Saline", "Pain Relief", "Compazine", "Benadryl"],
+    "variants": []
+  },
+  {
+    "id": "26",
+    "category": "Feeling Sick",
+    "title": "Super Mygraine",
+    "monarchyTitle": "Super Mygraine",
+    "price": 260.0,
+    "ingredients": [
+      "Normal Saline",
+      "Pain Relief",
+      "Compazine",
+      "Benadryl",
+      "Tylanol"
+    ],
+    "variants": []
   }
 ]

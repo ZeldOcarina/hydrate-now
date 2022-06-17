@@ -40,15 +40,18 @@ const StyledCard = styled.article`
   }
 `;
 
-const Card = ({ title, subtitle, price, i }) => {
+const Card = ({ monarchyTitle, price, id }) => {
   return (
     <StyledCard>
       <div className="left-part">
-        <h3>{title}</h3>
-        <p>{subtitle}</p>
+        <h3>{monarchyTitle}</h3>
         <p className="price">{`$${price}`}</p>
       </div>
-      <img className="bag" src={`${imageRootUrl}${i}.png`} alt={title} />
+      <img
+        className="bag"
+        src={`${imageRootUrl}${id}.png`}
+        alt={monarchyTitle}
+      />
     </StyledCard>
   );
 };
