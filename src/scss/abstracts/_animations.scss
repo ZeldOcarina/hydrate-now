@@ -1,0 +1,24 @@
+.example-exit-done {
+  display: none !important;
+}
+.example-enter-done {
+  opacity: 1 !important;
+}
+
+.example-enter {
+  opacity: 0.01 !important;
+}
+
+.example-enter.example-enter-active {
+  opacity: 1 !important;
+  transition: opacity 500ms ease-in !important;
+}
+
+.example-leave {
+  opacity: 1 !important;
+}
+
+.example-leave.example-leave-active {
+  opacity: 0.01 !important;
+  transition: opacity 300ms ease-in !important;
+}

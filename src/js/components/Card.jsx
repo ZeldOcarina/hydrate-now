@@ -28,6 +28,8 @@ const StyledCard = styled.article`
   .left-part {
     text-align: left;
     width: 200px;
+    align-self: baseline;
+    margin-top: var(--gutter);
   }
 
   .bag {
@@ -38,12 +40,26 @@ const StyledCard = styled.article`
     font-weight: 700;
     font-size: 2rem;
   }
+
+  .category {
+    border: 1px solid var(--white);
+    font-size: 1.7rem;
+    text-transform: uppercase;
+    color: var(--white);
+    font-weight: 200;
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0;
+    margin-bottom: var(--gutter);
+    text-align: center;
+  }
 `;
 
-const Card = ({ monarchyTitle, price, id }) => {
+const Card = ({ monarchyTitle, price, id, category }) => {
   return (
     <StyledCard>
       <div className="left-part">
+        <h6 className="category">{category}</h6>
         <h3>{monarchyTitle}</h3>
         <p className="price">{`$${price}`}</p>
       </div>

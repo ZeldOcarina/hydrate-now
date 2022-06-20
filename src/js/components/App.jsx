@@ -1,25 +1,43 @@
 import React from "react";
 import styled from "styled-components";
+import { CSSTransitionGroup } from "react-transition-group";
 
 import jsonCards from "../../content/data.json";
 
 import Card from "./Card";
+import Controls from "./Controls";
 
 const StyledApp = styled.div`
   color: var(--white);
 
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
-  gap: var(--title-gutter);
-  margin-top: var(--section-gutter);
+  .cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+    gap: var(--title-gutter);
+    margin-top: var(--section-gutter);
+  }
 `;
 
 const App = () => {
+  const [activeCategory, setActiveCategory] = React.useState("all ivs");
+
   return (
     <StyledApp className="container">
-      {jsonCards.map((card) => {
-        return <Card key={card.id} {...card} />;
-      })}
+      <Controls
+        activeCategory={activeCategory}
+        setActiveCategory={setActiveCategory}
+        cardsData={jsonCards}
+      />
+      <div className="cards-container">
+        {jsonCards.map((card) => {
+          if (
+            activeCategory === "all ivs" ||
+            card.category === activeCategory
+          ) {
+            return <Card key={card.id} {...card} />;
+          }
+        })}
+      </div>
     </StyledApp>
   );
 };
