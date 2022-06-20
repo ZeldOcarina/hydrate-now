@@ -1,14 +1,21 @@
 import React from "react";
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 const imageRootUrl = process.env.AWS_URL;
 
 const StyledCard = styled.article`
-  background-image: linear-gradient(
+  ${({ backgroundColorLight, backgroundColorDark }) => css`
+    background-image: linear-gradient(
+      90deg,
+      ${backgroundColorLight} 0%,
+      ${backgroundColorDark} 100%
+    );
+  `}
+  /* background-image: linear-gradient(
     90deg,
     var(--color-secondary) 0%,
     var(--color-primary) 100%
-  );
+  ); */
   padding: 2rem;
   border-radius: 10px;
   box-sizing: border-box;
@@ -20,7 +27,7 @@ const StyledCard = styled.article`
   height: 30rem;
 
   h3 {
-    color: var(--white);
+    color: ${({ color }) => color};
     text-align: left;
     margin: 0 0 1rem 0;
   }
@@ -39,13 +46,14 @@ const StyledCard = styled.article`
   .price {
     font-weight: 700;
     font-size: 2rem;
+    color: ${({ color }) => color};
   }
 
   .category {
-    border: 1px solid var(--white);
+    border: 1px solid ${({ color }) => color};
     font-size: 1.7rem;
     text-transform: uppercase;
-    color: var(--white);
+    color: ${({ color }) => color};
     font-weight: 200;
     display: flex;
     justify-content: center;
@@ -55,9 +63,20 @@ const StyledCard = styled.article`
   }
 `;
 
-const Card = ({ monarchyTitle, price, id, category }) => {
+const Card = ({
+  monarchyTitle,
+  price,
+  id,
+  category,
+  backgroundColorLight,
+  backgroundColorDark,
+  color,
+}) => {
   return (
-    <StyledCard>
+    <StyledCard
+      backgroundColorLight={backgroundColorLight}
+      backgroundColorDark={backgroundColorDark}
+      color={color}>
       <div className="left-part">
         <h6 className="category">{category}</h6>
         <h3>{monarchyTitle}</h3>

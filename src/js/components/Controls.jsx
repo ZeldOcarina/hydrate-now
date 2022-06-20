@@ -17,14 +17,27 @@ const Controls = ({ cardsData, activeCategory, setActiveCategory }) => {
   const [categories, setCategories] = useState([]);
 
   useEffect(() => {
-    const categoriesSet = new Set();
-    categoriesSet.add("all ivs");
+    const categoriesMap = [];
 
-    cardsData.forEach((card) => {
-      categoriesSet.add(card.category);
+    categoriesMap.push({
+      title: "all ivs",
+      lightBackgroundColor: "#38c3ff",
+      darkBackgroundColor: "#ff5ecc",
+      color: "#000000",
     });
 
-    setCategories(Array.from(categoriesSet));
+    cardsData.forEach((card) => {
+      if (!categoriesMap.find((category) => category.title === card.category)) {
+        categoriesMap.push({
+          title: card.category,
+          lightBackgroundColor: card.backgroundColorLight,
+          darkBackgroundColor: card.backgroundColorDark,
+          color: card.color,
+        });
+      }
+    });
+
+    setCategories(Array.from(categoriesMap));
   }, []);
 
   if (categories.length === 0) return "LOADING";
@@ -32,13 +45,17 @@ const Controls = ({ cardsData, activeCategory, setActiveCategory }) => {
   return (
     <StyledControls>
       {categories.map((category) => {
+        console.log(category);
         return (
           <CategoryButton
             className="category"
-            key={category}
-            isActive={category === activeCategory}
-            setActiveCategory={setActiveCategory}>
-            {category}
+            key={category.title}
+            isActive={category.title === activeCategory}
+            setActiveCategory={setActiveCategory}
+            lightBackgroundColor={category.lightBackgroundColor}
+            darkBackgroundColor={category.darkBackgroundColor}
+            color={category.color}>
+            {category.title}
           </CategoryButton>
         );
       })}
