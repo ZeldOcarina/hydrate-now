@@ -21,15 +21,27 @@ const StyledApp = styled.div`
 const App = () => {
   const [activeCategory, setActiveCategory] = React.useState("all ivs");
 
+  // MAKE ENERGY AND IMMUNITY THE FIRST CATEGORY TO APPEAR
+  const energyData = jsonCards.filter(
+    (item) => item.category === "Energy and Immunity"
+  );
+  const otherCategories = jsonCards.filter(
+    (item) => item.category !== "Energy and Immunity"
+  );
+
+  console.log(energyData);
+
+  const newCardsData = [...energyData, ...otherCategories];
+
   return (
     <StyledApp className="container">
       <Controls
         activeCategory={activeCategory}
         setActiveCategory={setActiveCategory}
-        cardsData={jsonCards}
+        cardsData={newCardsData}
       />
       <div className="cards-container">
-        {jsonCards.map((card) => {
+        {newCardsData.map((card) => {
           if (
             activeCategory === "all ivs" ||
             card.category === activeCategory

@@ -45,7 +45,6 @@ const Controls = ({ cardsData, activeCategory, setActiveCategory }) => {
   return (
     <StyledControls>
       {categories.map((category) => {
-        console.log(category);
         return (
           <CategoryButton
             className="category"
