@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import { CSSTransitionGroup } from "react-transition-group";
 
 import jsonCards from "../../content/data.json";
 
@@ -29,9 +28,9 @@ const App = () => {
     (item) => item.category !== "Energy and Immunity"
   );
 
-  console.log(energyData);
-
   const newCardsData = [...energyData, ...otherCategories];
+
+  console.log(newCardsData);
 
   return (
     <StyledApp className="container">

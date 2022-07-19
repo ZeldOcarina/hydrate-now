@@ -19,19 +19,6 @@
     "backgroundColorLight": "#C3e8ff",
     "backgroundColorDark": "#7dc3ee",
     "mainColor": "#9ed6f9",
-    "title": "Hydration",
-    "monarchyTitle": "Hydration",
-    "price": 174.5,
-    "ingredients": ["Normal Saline"],
-    "variants": []
-  },
-  {
-    "id": "3",
-    "category": "Hangover",
-    "color": "#0d0d0d",
-    "backgroundColorLight": "#C3e8ff",
-    "backgroundColorDark": "#7dc3ee",
-    "mainColor": "#9ed6f9",
     "title": "The Baller",
     "monarchyTitle": "What happens in Vegas...",
     "price": 349.0,
@@ -42,7 +29,7 @@
     ]
   },
   {
-    "id": "4",
+    "id": "3",
     "category": "Hangover",
     "color": "#0d0d0d",
     "backgroundColorLight": "#C3e8ff",
@@ -55,7 +42,7 @@
     "variants": ["Anti-Nausea and Pain Relief", "Anti-Heartburn Medications"]
   },
   {
-    "id": "5",
+    "id": "4",
     "category": "Hangover",
     "color": "#0d0d0d",
     "backgroundColorLight": "#C3e8ff",
@@ -65,6 +52,19 @@
     "monarchyTitle": "You better be ready",
     "price": 199.0,
     "ingredients": ["Normal Saline", "B-Complex"],
+    "variants": []
+  },
+  {
+    "id": "5",
+    "category": "Hangover",
+    "color": "#0d0d0d",
+    "backgroundColorLight": "#C3e8ff",
+    "backgroundColorDark": "#7dc3ee",
+    "mainColor": "#9ed6f9",
+    "title": "Hydration",
+    "monarchyTitle": "Hydration",
+    "price": 174.5,
+    "ingredients": ["Normal Saline"],
     "variants": []
   },
   {
@@ -92,18 +92,6 @@
     "backgroundColorLight": "#afc7ff",
     "backgroundColorDark": "#6b94f3",
     "mainColor": "#8babf6",
-    "monarchyTitle": "Hydration",
-    "price": 159.0,
-    "ingredients": ["Normal Saline"],
-    "variants": []
-  },
-  {
-    "id": "8",
-    "category": "Energy and Immunity",
-    "color": "#0d0d0d",
-    "backgroundColorLight": "#afc7ff",
-    "backgroundColorDark": "#6b94f3",
-    "mainColor": "#8babf6",
     "title": "NAD+",
     "monarchyTitle": "NAD+",
     "price": 799.0,
@@ -111,7 +99,7 @@
     "variants": []
   },
   {
-    "id": "9",
+    "id": "8",
     "category": "Energy and Immunity",
     "color": "#0d0d0d",
     "backgroundColorLight": "#afc7ff",
@@ -124,7 +112,7 @@
     "variants": []
   },
   {
-    "id": "10",
+    "id": "9",
     "category": "Energy and Immunity",
     "color": "#0d0d0d",
     "backgroundColorLight": "#afc7ff",
@@ -137,7 +125,7 @@
     "variants": []
   },
   {
-    "id": "11",
+    "id": "10",
     "category": "Energy and Immunity",
     "color": "#0d0d0d",
     "backgroundColorLight": "#afc7ff",
@@ -150,7 +138,7 @@
     "variants": []
   },
   {
-    "id": "12",
+    "id": "11",
     "category": "Energy and Immunity",
     "color": "#0d0d0d",
     "backgroundColorLight": "#afc7ff",
@@ -171,7 +159,7 @@
     "variants": []
   },
   {
-    "id": "13",
+    "id": "12",
     "category": "Energy and Immunity",
     "color": "#0d0d0d",
     "backgroundColorLight": "#afc7ff",
@@ -192,7 +180,7 @@
     "variants": []
   },
   {
-    "id": "14",
+    "id": "13",
     "category": "Energy and Immunity",
     "color": "#0d0d0d",
     "backgroundColorLight": "#afc7ff",
@@ -202,6 +190,18 @@
     "monarchyTitle": "Energy Boost",
     "price": 189.0,
     "ingredients": [],
+    "variants": []
+  },
+  {
+    "id": "14",
+    "category": "Energy and Immunity",
+    "color": "#0d0d0d",
+    "backgroundColorLight": "#afc7ff",
+    "backgroundColorDark": "#6b94f3",
+    "mainColor": "#8babf6",
+    "monarchyTitle": "Hydration",
+    "price": 159.0,
+    "ingredients": ["Normal Saline"],
     "variants": []
   },
   {
@@ -232,19 +232,6 @@
     "backgroundColorLight": "#c6c0ff",
     "backgroundColorDark": "#7e73f1",
     "mainColor": "#8c82f2",
-    "title": "Hydration",
-    "monarchyTitle": "Hydration",
-    "price": 124.5,
-    "ingredients": ["Normal Saline"],
-    "variants": []
-  },
-  {
-    "id": "17",
-    "category": "Athletes",
-    "color": "#0d0d0d",
-    "backgroundColorLight": "#c6c0ff",
-    "backgroundColorDark": "#7e73f1",
-    "mainColor": "#8c82f2",
     "title": "Workout Routine Support",
     "monarchyTitle": "Reset Recovery Workout",
     "price": 239.5,
@@ -256,6 +243,19 @@
       "Citrulline: Amino Acid",
       "Carnitine: Amino Acid"
     ],
+    "variants": []
+  },
+  {
+    "id": "17",
+    "category": "Athletes",
+    "color": "#0d0d0d",
+    "backgroundColorLight": "#c6c0ff",
+    "backgroundColorDark": "#7e73f1",
+    "mainColor": "#8c82f2",
+    "title": "Hydration",
+    "monarchyTitle": "Hydration",
+    "price": 124.5,
+    "ingredients": ["Normal Saline"],
     "variants": []
   },
   {

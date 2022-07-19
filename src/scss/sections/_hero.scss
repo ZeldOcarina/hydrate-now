@@ -10,11 +10,11 @@
   flex-direction: column;
   position: relative;
   text-align: center;
-  background-image: linear-gradient(
-    to right,
-    rgba($color-primary, $background-opacity) 0%,
-    rgba($color-primary, $background-opacity) 100%
-  );
+  // background-image: linear-gradient(
+  //   to right,
+  //   rgba($color-primary, $background-opacity) 0%,
+  //   rgba($color-primary, $background-opacity) 100%
+  // );
 
   &__content {
     background-color: rgb($banner-color, $banner-opacity);
@@ -39,7 +39,7 @@
     color: var(--white);
   }
 
-  &__bg-video {
+  &__bg-image {
     position: absolute;
     width: 100%;
     height: 100%;
